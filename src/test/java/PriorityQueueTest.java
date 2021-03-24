@@ -31,7 +31,7 @@ public class PriorityQueueTest {
         }
         index=0;
         while((s = test.poll()) != null) {
-            result[index]=s+1; //trigger fail
+            result[index]=s;
             index++;
         }
         assertArrayEquals(correct_array,result);
